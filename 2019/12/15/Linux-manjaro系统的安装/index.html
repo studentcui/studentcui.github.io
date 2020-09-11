@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>manjaro系统的安装 | Yao weblog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="https:&#x2F;&#x2F;distrowatch.com&#x2F;  linux系统交流网站 安装官网下载manjaro ios镜像  软碟通刻录u盘，写入方式选raw u盘启动 tz timezone 时区 asia&#x2F;shanghai keytable 键盘 us lang 语言 us driver 驱动，nofree不用自己装 boot启动 Welcome to Manjaro 最下方有 Launch inst">
+<meta property="og:type" content="article">
+<meta property="og:title" content="manjaro系统的安装">
+<meta property="og:url" content="http://example.com/2019/12/15/Linux-manjaro%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%89%E8%A3%85/index.html">
+<meta property="og:site_name" content="Yao weblog">
+<meta property="og:description" content="https:&#x2F;&#x2F;distrowatch.com&#x2F;  linux系统交流网站 安装官网下载manjaro ios镜像  软碟通刻录u盘，写入方式选raw u盘启动 tz timezone 时区 asia&#x2F;shanghai keytable 键盘 us lang 语言 us driver 驱动，nofree不用自己装 boot启动 Welcome to Manjaro 最下方有 Launch inst">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2019-12-15T05:55:13.000Z">
+<meta property="article:modified_time" content="2020-06-05T01:45:04.946Z">
+<meta property="article:author" content="Yao">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Yao weblog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.1.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Yao weblog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Linux-manjaro系统的安装" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/12/15/Linux-manjaro%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%89%E8%A3%85/" class="article-date">
+  <time datetime="2019-12-15T05:55:13.000Z" itemprop="datePublished">2019-12-15</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Linux/">Linux</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      manjaro系统的安装
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://distrowatch.com/">https://distrowatch.com/</a>  linux系统交流网站</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>官网下载manjaro ios镜像 </p>
+<p>软碟通刻录u盘，写入方式选raw</p>
+<p>u盘启动</p>
+<p>tz timezone 时区 asia/shanghai</p>
+<p>keytable 键盘 us</p>
+<p>lang 语言 us</p>
+<p>driver 驱动，nofree不用自己装</p>
+<p>boot启动</p>
+<p>Welcome to Manjaro</p>
+<p>最下方有 Launch installer</p>
+<p>安装注意！分区自己分</p>
+<p>双系统把 /boot/efi 挂载在win10 的引导上</p>
+<p>然后给linux的所有空间挂载为 / 即可</p>
+<a id="more"></a>
+
+<h2 id="安装完成后"><a href="#安装完成后" class="headerlink" title="安装完成后"></a>安装完成后</h2><h3 id="改国内源"><a href="#改国内源" class="headerlink" title="改国内源"></a>改国内源</h3><p><code>sudo pacman-mirrors -i -c China -m rank</code></p>
+<p><code>sudo pacman -Syy</code></p>
+<p>选最快的源即可</p>
+<p>有的软件pacman找不到，所以推荐修改GPG key，即可用pacman安装常用软件</p>
+<p>修改<code>/etc/pacman.conf</code>，在最后一行加</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[archlinuxcn]</span><br><span class="line">SigLevel &#x3D; Optional TrustedOnly</span><br><span class="line">Server &#x3D; https:&#x2F;&#x2F;mirrors.ustc.edu.cn&#x2F;archlinuxcn&#x2F;$arch</span><br></pre></td></tr></table></figure>
+
+<p>然后执行</p>
+<p><code>sudo pacman -S archlinuxcn-keyring</code></p>
+<p><code>sudo pacman -Syy</code></p>
+<h3 id="禁用关机按钮蜂鸣声"><a href="#禁用关机按钮蜂鸣声" class="headerlink" title="禁用关机按钮蜂鸣声"></a>禁用关机按钮蜂鸣声</h3><p>在<code>/etc/modprobe.d/</code>中创建.conf文件，使用blacklist关键字屏蔽不需要的模块，这里是pcspkr模块。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim &#x2F;etc&#x2F;modprobe.d&#x2F;nobeep.conf</span><br></pre></td></tr></table></figure>
+
+<p>文件中写</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">blacklist pcspkr</span><br></pre></td></tr></table></figure>
+
+<p>blacklist命令将屏蔽一个模块，所以不会自动装入，但是如果有其他非屏蔽模块需要这个模块，系统仍然会装入</p>
+<p>（可选）</p>
+<p>为了不让系统因为依赖装入，</p>
+<p><code>sudo vim /etc/modprobe.d/blacklist.conf</code></p>
+<p>在文件中</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">install MODULE &#x2F;bin&#x2F;false</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+
+<h3 id="常用软件"><a href="#常用软件" class="headerlink" title="常用软件"></a>常用软件</h3><h4 id="yay或aurman"><a href="#yay或aurman" class="headerlink" title="yay或aurman"></a>yay或aurman</h4><p>可以代替pacman安装软件</p>
+<p><code>sudo pacman -S yay base-devel</code></p>
+<h4 id="搜狗输入法"><a href="#搜狗输入法" class="headerlink" title="搜狗输入法"></a>搜狗输入法</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S fcitx-im</span><br><span class="line">sudo pacman -S fcitx-configtool</span><br><span class="line">sudo pacman -S fcitx-sogoupinyin</span><br><span class="line">sudo pacman -S fcitx-qt4 (fcitx-gtk2 fcitx-gtk3 fcitx-qt5)</span><br></pre></td></tr></table></figure>
+
+<p>在～/.xprofile中添加</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">export GTK_IM_MODULE&#x3D;fcitx</span><br><span class="line">export QT_IM_MODULE&#x3D;fcitx</span><br><span class="line">export XMODIFIERS&#x3D;&quot;@im&#x3D;fcitx&quot;</span><br></pre></td></tr></table></figure>
+
+<p>重启</p>
+<h4 id="Google-Chrome"><a href="#Google-Chrome" class="headerlink" title="Google Chrome"></a>Google Chrome</h4><p><code>sudo pacman -S google-chrome</code></p>
+<h4 id="Vim"><a href="#Vim" class="headerlink" title="Vim"></a>Vim</h4><p><code>sudo pacman -S vim</code></p>
+<h4 id="wps"><a href="#wps" class="headerlink" title="wps"></a>wps</h4><p><code>sudo pacman -S wps-office</code></p>
+<p><code>sudo pacman -S ttf-wps-fonts</code></p>
+<h4 id="网易云音乐"><a href="#网易云音乐" class="headerlink" title="网易云音乐"></a>网易云音乐</h4><p><code>sudo pacman -S netease-cloud-music</code></p>
+<h4 id="QQ"><a href="#QQ" class="headerlink" title="QQ"></a>QQ</h4><p><code>sudo pacman -S deepin.com.qq.im</code></p>
+<h4 id="深度截图"><a href="#深度截图" class="headerlink" title="深度截图"></a>深度截图</h4><p><code>sudo pacman -S deepin-screenshot</code></p>
+<h4 id="时间改为北京时间"><a href="#时间改为北京时间" class="headerlink" title="时间改为北京时间"></a>时间改为北京时间</h4><p><code>timedatectl set-local-rtc 1 --adjust-system-clock </code>把rtc时间解释成本地时间</p>
+<p>以下二选一</p>
+<p><code>sudo hwclock -s localtime</code>读硬件时间写入系统时间，读硬件时间解释为本地时间</p>
+<p>或</p>
+<p><code>sudo timedatectl set-local-rtc true</code>将硬件时钟设置为本地时区</p>
+<h4 id="优质字体"><a href="#优质字体" class="headerlink" title="优质字体"></a>优质字体</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S ttf-dejavu wqy-zenhei wqy-microhei wqy-bitmapfont ttf-monaco adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts noto-fonts-cjk</span><br></pre></td></tr></table></figure>
+
+<h4 id="飞机"><a href="#飞机" class="headerlink" title="飞机"></a>飞机</h4><p>安装electron-ssr</p>
+<p>打开terminal</p>
+<p><code>export http_proxy=&quot;http://127.0.0.1:12333&quot;</code></p>
+<p><code>export https_proxy=&quot;http://127.0.0.1:12333&quot;</code></p>
+<p>然后<code>crul www.google.com</code>如果返回数据代表成功</p>
+<p>chrome安装SwitchOmega插件</p>
+<p>profiles全删掉</p>
+<p>添加两个</p>
+<ol>
+<li>名称：ssr 类型：proxy profile</li>
+<li>名称：auto 类型：switch profile</li>
+</ol>
+<p>设置ssr 代理协议 http 代理服务器 127.0.0.1 代理端口 12333</p>
+<p>设置auto</p>
+<p>Switch rules添加ssr</p>
+<p>Rule List Config</p>
+<p>Rule List format选Switchy</p>
+<p>Rule List URL <code>https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt</code></p>
+<p>左下 Apply changes</p>
+<p>打开飞机，然后右上角插件选中ssr就可以用了</p>
+<h3 id="任何问题"><a href="#任何问题" class="headerlink" title="任何问题"></a>任何问题</h3><p>全面详细的文档 <a target="_blank" rel="noopener" href="https://wiki.archlinux.org/">https://wiki.archlinux.org</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2019/12/15/Linux-manjaro%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%89%E8%A3%85/" data-id="ckey0c8zt0005kstz3itnbixv" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/06/02/Software-tomcat/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          tomcat
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/12/02/Linux-Linux%E9%80%9A%E7%94%A8%E7%9F%A5%E8%AF%86/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Linux通用知识</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/ACM/">ACM</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Software/">Software</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">June 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/06/05/Software-RabbitMQ/">RabbitMQ</a>
+          </li>
+        
+          <li>
+            <a href="/2020/06/02/Software-tomcat/">tomcat</a>
+          </li>
+        
+          <li>
+            <a href="/2019/12/15/Linux-manjaro%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%89%E8%A3%85/">manjaro系统的安装</a>
+          </li>
+        
+          <li>
+            <a href="/2019/12/02/Linux-Linux%E9%80%9A%E7%94%A8%E7%9F%A5%E8%AF%86/">Linux通用知识</a>
+          </li>
+        
+          <li>
+            <a href="/2019/11/26/ACM-ACMTemplate/">ACM模板</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 Yao<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>

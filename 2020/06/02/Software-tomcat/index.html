@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>tomcat | Yao weblog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Linux准备工作官网下载Tomcat Core tar.gz tomcat依赖jdk运行环境，检查jdk是否安装 java -version 安装Tomcat12345678cd usr&#x2F;local&#x2F;mkdir myTomcatcd myTomcat&#x2F;rz 上传tomcat文件tar -zxvf 文件名mv apache-tomcat-8.5.37 tomcat 重">
+<meta property="og:type" content="article">
+<meta property="og:title" content="tomcat">
+<meta property="og:url" content="http://example.com/2020/06/02/Software-tomcat/index.html">
+<meta property="og:site_name" content="Yao weblog">
+<meta property="og:description" content="Linux准备工作官网下载Tomcat Core tar.gz tomcat依赖jdk运行环境，检查jdk是否安装 java -version 安装Tomcat12345678cd usr&#x2F;local&#x2F;mkdir myTomcatcd myTomcat&#x2F;rz 上传tomcat文件tar -zxvf 文件名mv apache-tomcat-8.5.37 tomcat 重">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-06-02T02:29:24.000Z">
+<meta property="article:modified_time" content="2020-06-05T12:04:57.972Z">
+<meta property="article:author" content="Yao">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Yao weblog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.1.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Yao weblog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Software-tomcat" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/06/02/Software-tomcat/" class="article-date">
+  <time datetime="2020-06-02T02:29:24.000Z" itemprop="datePublished">2020-06-02</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Software/">Software</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      tomcat
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h1><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>官网下载Tomcat Core tar.gz</p>
+<p>tomcat依赖jdk运行环境，检查jdk是否安装 <code>java -version</code></p>
+<h2 id="安装Tomcat"><a href="#安装Tomcat" class="headerlink" title="安装Tomcat"></a>安装Tomcat</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">cd usr&#x2F;local&#x2F;</span><br><span class="line">mkdir myTomcat</span><br><span class="line">cd myTomcat&#x2F;</span><br><span class="line">rz 上传tomcat文件</span><br><span class="line">tar -zxvf 文件名</span><br><span class="line">mv apache-tomcat-8.5.37 tomcat 重起个名字，方便</span><br><span class="line">&#x2F;usr&#x2F;local&#x2F;myTomcat&#x2F;tomcat&#x2F;bin&#x2F;startup.sh 开启tomcat</span><br><span class="line">&#x2F;usr&#x2F;local&#x2F;myTomcat&#x2F;tomcat&#x2F;bin&#x2F;shutdown.sh 关闭tomcat</span><br></pre></td></tr></table></figure>
+
+<p>尝试<a href="http://ip:8080能否成功访问">http://ip:8080能否成功访问</a></p>
+<p>如果部署springboot项目可能占用8080</p>
+<p>tomcat/conf/server.xml改端口</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/06/02/Software-tomcat/" data-id="ckey0c909000pkstzhziga1cx" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/06/05/Software-RabbitMQ/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          RabbitMQ
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/12/15/Linux-manjaro%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%89%E8%A3%85/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">manjaro系统的安装</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/ACM/">ACM</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Software/">Software</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">June 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/06/05/Software-RabbitMQ/">RabbitMQ</a>
+          </li>
+        
+          <li>
+            <a href="/2020/06/02/Software-tomcat/">tomcat</a>
+          </li>
+        
+          <li>
+            <a href="/2019/12/15/Linux-manjaro%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%89%E8%A3%85/">manjaro系统的安装</a>
+          </li>
+        
+          <li>
+            <a href="/2019/12/02/Linux-Linux%E9%80%9A%E7%94%A8%E7%9F%A5%E8%AF%86/">Linux通用知识</a>
+          </li>
+        
+          <li>
+            <a href="/2019/11/26/ACM-ACMTemplate/">ACM模板</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 Yao<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>

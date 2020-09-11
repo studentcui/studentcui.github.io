@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Linux通用知识 | Yao weblog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="常用pwd 显示当前目录 ls显示当前目录文件">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux通用知识">
+<meta property="og:url" content="http://example.com/2019/12/02/Linux-Linux%E9%80%9A%E7%94%A8%E7%9F%A5%E8%AF%86/index.html">
+<meta property="og:site_name" content="Yao weblog">
+<meta property="og:description" content="常用pwd 显示当前目录 ls显示当前目录文件">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2019-12-02T04:40:39.000Z">
+<meta property="article:modified_time" content="2020-06-29T06:52:12.039Z">
+<meta property="article:author" content="Yao">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Yao weblog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.1.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Yao weblog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Linux-Linux通用知识" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/12/02/Linux-Linux%E9%80%9A%E7%94%A8%E7%9F%A5%E8%AF%86/" class="article-date">
+  <time datetime="2019-12-02T04:40:39.000Z" itemprop="datePublished">2019-12-02</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Linux/">Linux</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Linux通用知识
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="常用"><a href="#常用" class="headerlink" title="常用"></a>常用</h1><p><code>pwd</code> 显示当前目录</p>
+<p><code>ls</code>显示当前目录文件</p>
+<a id="more"></a>
+
+<h1 id="File"><a href="#File" class="headerlink" title="File"></a>File</h1><h2 id="复制-cp"><a href="#复制-cp" class="headerlink" title="复制 cp"></a>复制 cp</h2><p>cp [option] source1 source2 source3 … directory</p>
+<p>-a archive，复制所有目录</p>
+<p>-i 若目标文件存在，询问是否覆盖</p>
+<p><code>cp /test1/file1 /test2/file2</code> 将file1复制为file2</p>
+<h2 id="移动-mv"><a href="#移动-mv" class="headerlink" title="移动 mv"></a>移动 mv</h2><p>mv [-fiv] source destination</p>
+<p>-i 若目标文件存在，询问是否覆盖</p>
+<p><code>mv /test1/file1 /test2/file2</code> 将file1移动为file2</p>
+<h2 id="飞机"><a href="#飞机" class="headerlink" title="飞机"></a>飞机</h2><p>ubuntu系统里只有python3 没有python 所以用不了electron-ssr 建立一个软连接就能用了<br><code>sudo ln -s /usr/bin/python3 /usr/bin/python</code></p>
+<h2 id="screen-多重视窗管理程序"><a href="#screen-多重视窗管理程序" class="headerlink" title="screen 多重视窗管理程序"></a>screen 多重视窗管理程序</h2><p>非root用户使用screen需要先运行<code>script /dev/null</code></p>
+<ul>
+<li><p><code>screen -S sessionName command</code> sessionName为会话名称 command为想要执行的命令 </p>
+</li>
+<li><p>Ctrl+a d 进入detached状态，暂时离开正在运行的session，后台运行</p>
+</li>
+<li><p><code>screen -ls</code> 查看所有会话</p>
+</li>
+<li><p><code>screen -r sessionName</code> 恢复被detached的会话</p>
+</li>
+<li><p><code>screen -X -S sessionName quit</code>杀死一个已经detached的会话</p>
+</li>
+</ul>
+<h2 id="Vim常用"><a href="#Vim常用" class="headerlink" title="Vim常用"></a>Vim常用</h2><p>esc</p>
+<p>d删除</p>
+<p>G光标移动到最后一行</p>
+<p>dG 删除全部</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2019/12/02/Linux-Linux%E9%80%9A%E7%94%A8%E7%9F%A5%E8%AF%86/" data-id="ckey0c8zt0004kstz98t796av" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/12/15/Linux-manjaro%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%89%E8%A3%85/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          manjaro系统的安装
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/11/26/ACM-ACMTemplate/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">ACM模板</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/ACM/">ACM</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Software/">Software</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">June 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/06/05/Software-RabbitMQ/">RabbitMQ</a>
+          </li>
+        
+          <li>
+            <a href="/2020/06/02/Software-tomcat/">tomcat</a>
+          </li>
+        
+          <li>
+            <a href="/2019/12/15/Linux-manjaro%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%89%E8%A3%85/">manjaro系统的安装</a>
+          </li>
+        
+          <li>
+            <a href="/2019/12/02/Linux-Linux%E9%80%9A%E7%94%A8%E7%9F%A5%E8%AF%86/">Linux通用知识</a>
+          </li>
+        
+          <li>
+            <a href="/2019/11/26/ACM-ACMTemplate/">ACM模板</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 Yao<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
