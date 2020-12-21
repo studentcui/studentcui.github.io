@@ -20,19 +20,17 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="常用pwd 显示当前目录 ls显示当前目录文件">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Linux通用知识">
-<meta property="og:url" content="http://example.com/2019/12/02/Linux-Linux%E9%80%9A%E7%94%A8%E7%9F%A5%E8%AF%86/index.html">
+  <meta property="og:type" content="article">
+<meta property="og:title" content="Title">
+<meta property="og:url" content="http://example.com/2019/11/10/Template-Title/index.html">
 <meta property="og:site_name" content="Yao weblog">
-<meta property="og:description" content="常用pwd 显示当前目录 ls显示当前目录文件">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2019-12-02T04:40:39.000Z">
-<meta property="article:modified_time" content="2020-06-29T06:52:12.039Z">
+<meta property="article:published_time" content="2019-11-09T20:17:48.000Z">
+<meta property="article:modified_time" content="2020-11-23T06:30:42.603Z">
 <meta property="article:author" content="Yao">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/2019/12/02/Linux-Linux%E9%80%9A%E7%94%A8%E7%9F%A5%E8%AF%86/">
+<link rel="canonical" href="http://example.com/2019/11/10/Template-Title/">
 
 
 <script id="page-configurations">
@@ -45,7 +43,7 @@
   };
 </script>
 
-  <title>Linux通用知识 | Yao weblog</title>
+  <title>Title | Yao weblog</title>
   
 
 
@@ -155,7 +153,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2019/12/02/Linux-Linux%E9%80%9A%E7%94%A8%E7%9F%A5%E8%AF%86/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2019/11/10/Template-Title/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -168,7 +166,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Linux通用知识
+          Title
         </h1>
 
         <div class="post-meta">
@@ -178,14 +176,14 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2019-12-02 12:40:39" itemprop="dateCreated datePublished" datetime="2019-12-02T12:40:39+08:00">2019-12-02</time>
+              <time title="Created: 2019-11-10 04:17:48" itemprop="dateCreated datePublished" datetime="2019-11-10T04:17:48+08:00">2019-11-10</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-06-29 14:52:12" itemprop="dateModified" datetime="2020-06-29T14:52:12+08:00">2020-06-29</time>
+                <time title="Modified: 2020-11-23 14:30:42" itemprop="dateModified" datetime="2020-11-23T14:30:42+08:00">2020-11-23</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -193,7 +191,7 @@
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a>
+                  <a href="/categories/Software/" itemprop="url" rel="index"><span itemprop="name">Software</span></a>
                 </span>
             </span>
 
@@ -208,36 +206,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="常用"><a href="#常用" class="headerlink" title="常用"></a>常用</h1><p><code>pwd</code> 显示当前目录</p>
-<p><code>ls</code>显示当前目录文件</p>
-<a id="more"></a>
-
-<h1 id="File"><a href="#File" class="headerlink" title="File"></a>File</h1><h2 id="复制-cp"><a href="#复制-cp" class="headerlink" title="复制 cp"></a>复制 cp</h2><p>cp [option] source1 source2 source3 … directory</p>
-<p>-a archive，复制所有目录</p>
-<p>-i 若目标文件存在，询问是否覆盖</p>
-<p><code>cp /test1/file1 /test2/file2</code> 将file1复制为file2</p>
-<h2 id="移动-mv"><a href="#移动-mv" class="headerlink" title="移动 mv"></a>移动 mv</h2><p>mv [-fiv] source destination</p>
-<p>-i 若目标文件存在，询问是否覆盖</p>
-<p><code>mv /test1/file1 /test2/file2</code> 将file1移动为file2</p>
-<h2 id="飞机"><a href="#飞机" class="headerlink" title="飞机"></a>飞机</h2><p>ubuntu系统里只有python3 没有python 所以用不了electron-ssr 建立一个软连接就能用了<br><code>sudo ln -s /usr/bin/python3 /usr/bin/python</code></p>
-<h2 id="screen-多重视窗管理程序"><a href="#screen-多重视窗管理程序" class="headerlink" title="screen 多重视窗管理程序"></a>screen 多重视窗管理程序</h2><p>非root用户使用screen需要先运行<code>script /dev/null</code></p>
-<ul>
-<li><p><code>screen -S sessionName command</code> sessionName为会话名称 command为想要执行的命令 </p>
-</li>
-<li><p>Ctrl+a d 进入detached状态，暂时离开正在运行的session，后台运行</p>
-</li>
-<li><p><code>screen -ls</code> 查看所有会话</p>
-</li>
-<li><p><code>screen -r sessionName</code> 恢复被detached的会话</p>
-</li>
-<li><p><code>screen -X -S sessionName quit</code>杀死一个已经detached的会话</p>
-</li>
-</ul>
-<h2 id="Vim常用"><a href="#Vim常用" class="headerlink" title="Vim常用"></a>Vim常用</h2><p>esc</p>
-<p>d删除</p>
-<p>G光标移动到最后一行</p>
-<p>dG 删除全部</p>
-
+        
     </div>
 
     
@@ -252,12 +221,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2019/11/26/ACM-ACMTemplate/" rel="prev" title="ACM模板">
-      <i class="fa fa-chevron-left"></i> ACM模板
+    <a href="/2019/11/10/Software-MySQL/" rel="prev" title="MySQL">
+      <i class="fa fa-chevron-left"></i> MySQL
     </a></div>
       <div class="post-nav-item">
-    <a href="/2019/12/15/Linux-manjaro%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%89%E8%A3%85/" rel="next" title="manjaro系统的安装">
-      manjaro系统的安装 <i class="fa fa-chevron-right"></i>
+    <a href="/2019/11/10/Software-Git/" rel="next" title="Git">
+      Git <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -317,7 +286,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B8%B8%E7%94%A8"><span class="nav-number">1.</span> <span class="nav-text">常用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#File"><span class="nav-number">2.</span> <span class="nav-text">File</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%8D%E5%88%B6-cp"><span class="nav-number">2.1.</span> <span class="nav-text">复制 cp</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A7%BB%E5%8A%A8-mv"><span class="nav-number">2.2.</span> <span class="nav-text">移动 mv</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A3%9E%E6%9C%BA"><span class="nav-number">2.3.</span> <span class="nav-text">飞机</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#screen-%E5%A4%9A%E9%87%8D%E8%A7%86%E7%AA%97%E7%AE%A1%E7%90%86%E7%A8%8B%E5%BA%8F"><span class="nav-number">2.4.</span> <span class="nav-text">screen 多重视窗管理程序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Vim%E5%B8%B8%E7%94%A8"><span class="nav-number">2.5.</span> <span class="nav-text">Vim常用</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
